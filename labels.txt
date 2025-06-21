@@ -1,0 +1,43 @@
+Limite de velocidad (20 km/h)
+Limite de velocidad (30 km/h)
+Limite de velocidad (50 km/h)
+Limite de velocidad (60 km/h)
+Limite de velocidad (70 km/h)
+Limite de velocidad (80 km/h)
+Fin del limite de velocidad (80 km/h)
+Limite de velocidad (100 km/h)
+Limite de velocidad (120 km/h)
+Prohibido adelantar
+Prohibido adelantar a vehiculos de mas de 3.5 toneladas
+Prioridad en la proxima interseccion
+Via con prioridad
+Ceda el paso
+Alto
+Prohibido el paso de vehiculos
+Prohibido el paso a vehiculos de mas de 3.5 toneladas
+Prohibido el paso
+Precaucion general
+Curva peligrosa a la izquierda
+Curva peligrosa a la derecha
+Doble curva
+Camino irregular
+Calzada resbaladiza
+Reduccion de calzada por la derecha
+Obras en la via
+Semaforo
+Paso de peatones
+Cruce escolar
+Cruce de bicicletas
+Precaucion: hielo o nieve
+Cruce de animales salvajes
+Fin de todas las restricciones de velocidad y adelantamiento
+Curva obligatoria a la derecha
+Curva obligatoria a la izquierda
+Solo de frente
+Recto o a la derecha
+Recto o a la izquierda
+Mantengase a la derecha
+Mantengase a la izquierda
+Rotonda obligatoria
+Fin de prohibicion de adelantamiento
+Fin de prohibicion de adelantamiento para vehiculos de mas de 3.5 toneladas
