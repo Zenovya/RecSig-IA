@@ -59,7 +59,6 @@ datagen = ImageDataGenerator(
     height_shift_range=0.1,
     shear_range=0.1,
 )
-datagen.fit(X_train)
 
 # --- Definición del modelo ---
 model = Sequential(

@@ -12,14 +12,14 @@ LABELS_PATH = os.path.join(BASE_DIR, "labels.txt")
 
 IMG_SIZE = 30
 ROI_SIZE = 256
-THRESHOLD = 0.92
+THRESHOLD = 0.90
 
 # --- Cargar modelo y etiquetas ---
 model = tf.keras.models.load_model(MODEL_PATH)
 with open(LABELS_PATH, "r", encoding="utf-8") as f:
     labels = [line.strip() for line in f.readlines()]
 
-confidencias = deque(maxlen=3)
+confidencias = deque(maxlen=5)
 
 # --- Configuración de la cámara ---
 cap = cv2.VideoCapture(1)
@@ -53,6 +53,14 @@ while True:
     confidencias.append(conf)
     media_conf = sum(confidencias) / len(confidencias)
     pred_label = labels[pred_idx] if pred_idx < len(labels) else f"Clase {pred_idx}"
+
+    cv2.rectangle(
+        frame,
+        (x1, y1),
+        (x2, y2),
+        (0, 0, 255) if media_conf < THRESHOLD else (0, 255, 0),
+        2,
+    )
 
     texto = (
         f"{pred_label} ({media_conf:.2f})"
@@ -126,14 +134,6 @@ while True:
         0.5,
         (0, 0, 0),
         1,
-    )
-
-    cv2.rectangle(
-        frame,
-        (x1, y1),
-        (x2, y2),
-        (0, 0, 255) if media_conf < THRESHOLD else (0, 255, 0),
-        2,
     )
 
     resized_frame = cv2.resize(
