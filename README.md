@@ -1,4 +1,4 @@
-# 🚦 GTSRB Lite - Reconocimiento de Señales de Tránsito
+# 🚦 RECSIG - Reconocimiento de Señales de Tránsito
 
 Este proyecto permite entrenar, evaluar y ejecutar en tiempo real un modelo de reconocimiento de señales de tránsito utilizando el dataset GTSRB (German Traffic Sign Recognition Benchmark).
 
